@@ -1,9 +1,10 @@
+# NOTE: for versions >= 5.0.0 (for python 3.5+) see python3-sphinxcontrib-spelling.spec)
 #
 # Conditional build:
 %bcond_without	doc	# Sphinx documentation
 %bcond_without	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-sphinxcontrib-spelling.spec)
 
 Summary:	Sphinx spell checking extension
 Summary(pl.UTF-8):	Rozszerzenie Sphinksa do sprawdzania pisowni
@@ -39,6 +40,8 @@ BuildRequires:	python3-pbr
 BuildRequires:	python3-setuptools
 %if %{with tests}
 BuildRequires:	python3-Sphinx >= 1.8.5
+BuildRequires:	python3-fixtures >= 3.0.0
+BuildRequires:	python3-pyenchant >= 1.6.5
 BuildRequires:	python3-pytest
 BuildRequires:	python3-subunit >= 0.0.18
 BuildRequires:	python3-testrepository >= 0.0.18
