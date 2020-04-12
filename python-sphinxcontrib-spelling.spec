@@ -22,6 +22,7 @@ BuildRequires:	python-modules >= 1:2.7
 BuildRequires:	python-pbr
 BuildRequires:	python-setuptools
 %if %{with tests}
+BuildRequires:	python-Sphinx >= 1.8.5
 BuildRequires:	python-fixtures >= 3.0.0
 BuildRequires:	python-pyenchant >= 1.6.5
 BuildRequires:	python-pytest
@@ -37,6 +38,7 @@ BuildRequires:	python3-modules >= 1:3.5
 BuildRequires:	python3-pbr
 BuildRequires:	python3-setuptools
 %if %{with tests}
+BuildRequires:	python3-Sphinx >= 1.8.5
 BuildRequires:	python3-pytest
 BuildRequires:	python3-subunit >= 0.0.18
 BuildRequires:	python3-testrepository >= 0.0.18
