@@ -139,7 +139,7 @@ Dokumentacja API modułu Pythona sphinxcontrib-spelling.
 ENABLE_SPELLING=1 \
 PYTHONPATH=$(pwd) \
 %{__make} -C docs html \
-	SPHINX_BUILD=sphinx-build-2
+	SPHINXBUILD=sphinx-build-2
 %endif
 
 %install
