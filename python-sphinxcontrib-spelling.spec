@@ -58,6 +58,7 @@ BuildRequires:	aspell-en
 BuildRequires:	enchant-aspell
 %endif
 %if %{with doc}
+BuildRequires:	python-pyenchant
 BuildRequires:	sphinx-pdg-2 >= 1.8.5
 %endif
 Requires:	python-modules >= 1:2.7
