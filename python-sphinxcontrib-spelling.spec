@@ -11,7 +11,7 @@ Summary(pl.UTF-8):	Rozszerzenie Sphinksa do sprawdzania pisowni
 Name:		python-sphinxcontrib-spelling
 # keep 4.x here for python 2.x support
 Version:	4.3.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/sphinxcontrib-spelling/
